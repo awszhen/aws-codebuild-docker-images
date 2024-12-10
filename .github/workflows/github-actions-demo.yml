@@ -4,7 +4,7 @@ on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on:
-      - codebuild-zhen-GHA-test-3-${{ github.run_id }}-${{ github.run_attempt }}
+      - codebuild-zhen-syd-test-${{ github.run_id }}-${{ github.run_attempt }}
       - buildspec-override:true
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
